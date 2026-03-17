@@ -4,7 +4,7 @@ from .database import SessionLocal, engine, Base
 from . import models, crud
 from .seed import seed_db
 
-app = FastAPI(title="API DETRAN Fake (SEM DOCKER)")
+app = FastAPI(title="API DETRAN")
 
 Base.metadata.create_all(bind=engine)
 
